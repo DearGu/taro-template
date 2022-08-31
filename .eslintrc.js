@@ -3,7 +3,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2021: true
+    es2021: true,
   },
   parser: 'vue-eslint-parser',
   extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
@@ -18,15 +18,15 @@ module.exports = {
     'vue/no-unused-vars': [
       'error',
       {
-        ignorePattern: '^_'
-      }
+        ignorePattern: '^_',
+      },
     ],
     'vue/multi-word-component-names': 'off',
     'vue/no-parsing-error': [
       'error',
       {
-        'control-character-reference': false
-      }
+        'control-character-reference': false,
+      },
     ],
     'vue/no-v-html': 'off',
     'max-lines': [
@@ -34,15 +34,17 @@ module.exports = {
       {
         max: 800,
         skipBlankLines: true,
-        skipComments: true
-      }
+        skipComments: true,
+      },
     ],
-    'import/newline-after-import': 'error'
+    'import/newline-after-import': 'error',
   },
   globals: {
     defineProps: 'readonly',
     defineEmits: 'readonly',
     defineExpose: 'readonly',
-    withDefaults: 'readonly'
-  }
+    withDefaults: 'readonly',
+    defineAppConfig: 'readonly',
+    definePageConfig: 'readonly',
+  },
 };
