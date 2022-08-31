@@ -27,7 +27,7 @@ const config = {
   mini: {
     postcss: {
       pxtransform: {
-        enable: true,
+        enable: false,
         config: {
           selectorBlackList: ['nut-'],
         },
