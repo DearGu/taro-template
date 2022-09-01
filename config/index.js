@@ -46,6 +46,9 @@ const config = {
         },
       },
     },
+    optimizeMainPackage: {
+      enable: true,
+    },
   },
   h5: {
     publicPath: '/',
